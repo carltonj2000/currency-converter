@@ -14,8 +14,10 @@
     "android": "react-native-scripts android",
     "ios": "react-native-scripts ios",
     "test": "jest",
-    "a-emulator": "/Users/carltonjoseph/Library/Android/sdk/emulator/emulator @Nexus_5X_API_27",
-    "i-emulator": "open /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app/",
+    "a-emulator":
+      "/Users/carltonjoseph/Library/Android/sdk/emulator/emulator @Nexus_5X_API_28",
+    "i-emulator":
+      "open /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app/",
     "lint": "eslint app/",
     "lint:fix": "eslint app/ --fix"
   },
@@ -26,7 +28,7 @@
     "@expo/vector-icons": "6.2.0",
     "color": "2.0.0",
     "expo": "^27.0.1",
-    "moment": "2.18.1",
+    "moment": "2.22.2",
     "react": "16.3.1",
     "react-native": "~0.55.2",
     "react-native-extended-stylesheet": "0.8.0"

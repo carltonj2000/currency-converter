@@ -15,7 +15,7 @@
     "ios": "react-native-scripts ios",
     "test": "jest",
     "a-emulator":
-      "/Users/carltonjoseph/Library/Android/sdk/emulator/emulator @Nexus_5X_API_28",
+      "/Users/carltonjoseph/Library/Android/sdk/emulator/emulator @Nexus_5X_API_28 &",
     "i-emulator":
       "open /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app/",
     "lint": "eslint app/",

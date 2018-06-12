@@ -12,7 +12,9 @@ EStyleSheet.build({
 });
 
 //import Home from "./screens/Home";
-import CurrencyList from "./screens/CurrencyList";
+//import CurrencyList from "./screens/CurrencyList";
+import Options from "./screens/Options";
 
 //export default () => <Home />;
-export default () => <CurrencyList />;
+//export default () => <CurrencyList />;
+export default () => <Options />;

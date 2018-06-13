@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { StatusBar, ScrollView, Platform } from "react-native";
+import { StatusBar, ScrollView, Platform, Linking } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import PropTypes from "prop-types";
 
@@ -14,7 +14,7 @@ class Options extends Component {
     navigation: PropTypes.object
   };
   handleSitePress = () => {
-    console.log("site");
+    Linking.openURL("http://fixer.io").catch(() => alert("An error occured"));
   };
   handleThemesPress = () => {
     this.props.navigation.navigate("Themes", { title: "Themes" });

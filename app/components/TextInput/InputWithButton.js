@@ -6,7 +6,7 @@ import color from "color";
 import styles from "./styles";
 
 const InputWithButton = props => {
-  const { buttonText, onPress, editable = true } = props;
+  const { buttonText, onPress, editable = true, textColor } = props;
 
   const underlayColor = color(styles.$buttonBackgroundColorBase).darken(
     styles.$buttonBackgroundColorModifier
@@ -14,6 +14,8 @@ const InputWithButton = props => {
 
   const containerStyles = [styles.container];
   if (!editable) containerStyles.push(styles.containerDisabled);
+  const textStyles = [styles.buttonText];
+  if (textColor) textStyles.push({ color: textColor });
 
   return (
     <View style={containerStyles}>
@@ -22,7 +24,7 @@ const InputWithButton = props => {
         onPress={onPress}
         style={styles.buttonContainer}
       >
-        <Text style={styles.buttonText}>{buttonText}</Text>
+        <Text style={textStyles}>{buttonText}</Text>
       </TouchableHighlight>
       <View style={styles.border} />
       <TextInput
